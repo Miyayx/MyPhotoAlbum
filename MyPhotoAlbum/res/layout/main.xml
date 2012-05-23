@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="网络相册"
+        android:id="@+id/web_albums" />
+    
+      <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="本地相册"
+        android:id="@+id/local_albums" />
+
+</LinearLayout>

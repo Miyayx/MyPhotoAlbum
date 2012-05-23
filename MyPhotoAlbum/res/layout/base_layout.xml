@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  android:id="@+id/baseroot"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:gravity="top"
+	android:background="@drawable/background_spring">
+	<RelativeLayout
+	    android:id="@+id/base_view"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_above="@+id/selectionbar">
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/selectionbar"
+		android:layout_width="fill_parent" 
+		android:layout_height="60dip"
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip" 
+		android:paddingRight="10dip"
+		android:layout_gravity="bottom"
+		android:layout_alignParentBottom="true"
+		>
+		
+		<Button android:id="@+id/ic_photoalbum"
+			android:layout_width="75dip" android:layout_height="50dip"
+			android:layout_alignParentLeft="true"
+			android:text="网络相册" android:textSize="12sp"/>
+		
+		<Button android:id="@+id/ic_upload"
+			android:layout_width="75dip" android:layout_height="50dip"
+			android:layout_toRightOf="@+id/ic_photoalbum"
+			android:text="上传"/>
+		
+		<Button android:id="@+id/ic_takephoto"
+			android:layout_width="75dip" android:layout_height="50dip"
+			android:layout_toLeftOf="@+id/ic_setting"
+			android:text="拍照"/>
+		
+		<Button android:id="@+id/ic_setting"
+			android:layout_width="75dip" android:layout_height="50dip"
+			android:layout_alignParentRight="true"
+			android:text="设置"/>
+	</RelativeLayout>
+</RelativeLayout>
